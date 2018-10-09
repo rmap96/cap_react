@@ -3,12 +3,14 @@ import big from '../assets/big.png';
 import small from '../assets/small.png';
 import './css/image_viewer.css';
 
-const image = document.createElement('img');
-image.src = small;
+export default () => {
+    const image = document.createElement('img');
+    image.src = small;
 
-document.body.appendChild(image);
+    document.body.appendChild(image);
+};
 
-const bigImage = document.createElement('img');
-bigImage.src = big;
+//const bigImage = document.createElement('img');
+//bigImage.src = big;
 
-document.body.appendChild(bigImage);
+//document.body.appendChild(bigImage);
